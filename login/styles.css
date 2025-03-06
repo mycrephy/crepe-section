@@ -1,0 +1,168 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* แถบด้านบน */
+.top-bar {
+    width: 100%;
+    height: 100px;
+    background-color: #FECDCF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-bar-logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.top-bar-title {
+    font-size: 36px;
+    font-family: 'Dancing Script', cursive;  /* ใช้ฟอนต์ Dancing Script */
+    color: #9D613F;
+    font-weight: 700;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4B3F36;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.img-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+}
+
+.login-form-container {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 565px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo-and-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+.login-title {
+    font-size: 36px;
+    font-family: 'Dancing Script', cursive;  /* ใช้ฟอนต์ Dancing Script */
+    color: #9D613F;
+    font-weight: 700;
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    color: #876D5E;
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px;  /* ให้พื้นที่สำหรับไอคอน */
+    border: 2px solid #E38497;  /* ขอบสีชมพู */
+    border-radius: 10px;
+    font-size: 15px;
+    color: #876D5E;
+    font-weight: 300;
+    transition: border-color 0.3s ease; /* เพิ่มการเปลี่ยนสีขอบเมื่อโฟกัส */
+}
+
+.input-with-icon input::placeholder {
+    color: #876D5E;
+}
+
+.input-with-icon .icon {
+    position: absolute;
+    left: 12px;  /* ตั้งตำแหน่งไอคอน */
+    top: 12px;
+    width: 20px;
+    height: 20px;
+}
+
+.input-with-icon input:focus {
+    border-color: #FF80B3; /* เปลี่ยนสีขอบเมื่อคลิกหรือโฟกัส */
+    outline: none;
+}
+
+
+.login-button {
+    margin-bottom: 15px;
+}
+
+.login-button button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 45px;
+    background: linear-gradient(0deg, #E38497 1%, #FECDCF 100%);
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;  /* ใช้ฟอนต์ Dancing Script */
+    font-weight: 800;
+    color: #9D613F;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-button button:hover {
+    background: linear-gradient(0deg, #FECDCF 1%, #E38497 100%);
+}
+
+.create-account {
+    text-align: center;
+    font-size: 15px;
+    color: #876D5E;
+    font-weight: 500;
+}
+
+.create-account span {
+    cursor: pointer;
+    text-decoration: underline;
+}
